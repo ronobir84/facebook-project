@@ -1,22 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/image/facebook.png"
+ 
 import { FaSearch, FaUserCircle, FaGamepad, FaBorderNone } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 import { BsFillPlayBtnFill, BsMessenger } from "react-icons/bs";
 import { BiStore } from "react-icons/bi";
 import { IoNotifications } from "react-icons/io5";
 import image from "../../../assets/image/main.jpg"
+import icon_img from "../../../assets/image/icon-img.png"
 
 const Navbar = () => {
     return (
         <div>
             <div className="bg-[#FFFFFF] fixed  px-10 w-full shadow-xl">
                 <div className="flex justify-between pt-2">
-                    <div className="flex gap-3 pt-1">
-                        <Link><img src={logo} alt="" className="w-12" /></Link>
+                    <div className="flex gap-3">
+                        <Link><img src={icon_img} alt="" className="w-16" /></Link>
                         <div className="relative bottom-4">
                             <FaSearch className="relative top-[35px] left-5 text-gray-400"></FaSearch>
-                            <input className=" w-[280px] h-14 px-12 rounded-full bg-[#F0F2F5] " placeholder="Search Facebook" type="search" />
+                            <input className=" w-[280px] h-14 px-12 rounded-full bg-[#F0F2F5] " placeholder="Search Hero" type="search" />
                         </div>
                     </div>
                     <div className="flex gap-24 pt-4">
@@ -37,7 +38,7 @@ const Navbar = () => {
                             <NavLink><IoNotifications className="text-3xl relative top-4 left-[16px]"></IoNotifications></NavLink>
                         </div>
                         <div className="">
-                            <img className="w-[64px] h-[65px] rounded-full " src={image} alt="" />
+                            <Link><img className="w-[64px] h-[65px] rounded-full " src={image} alt="" /></Link>
                         </div>
                     </div>
                 </div>
