@@ -11,7 +11,7 @@ import icon_img from "../../../assets/image/icon-img.png"
 const Navbar = () => {
     return (
         <div>
-            <div className="bg-[#FFFFFF] fixed  px-10 w-full shadow-xl">
+            <div className="bg-[#FFFFFF] fixed  px-12 w-full shadow-xl">
                 <div className="flex justify-between pt-2">
                     <div className="flex gap-3">
                         <Link><img src={icon_img} alt="" className="w-16" /></Link>
